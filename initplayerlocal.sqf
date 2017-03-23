@@ -165,6 +165,9 @@ simulWeatherSync;
 [] spawn ghst_fnc_ptracker;
 
 sleep 30;
-
+/*
 // Info text
 [str("Phoenix Down Gaming Presents") , str("2017 Enemy Assault") , str(date select 1) + "." + str(date select 2) + "." + str(date select 0), str("By Ghost // PDG Map Team")] spawn BIS_fnc_infoText;
+*/
+_msg = format ["Phoenix Down Gaming Presents: 2017 Enemy Assault  Created by Ghost -- with Edits by PDG Map Team"]; //leave spaces as they are for best results
+[format["<t size='1' color='#1E90FF' t shadow='2'>%1</t>",_msg],0,0.8,10,2] call BIS_fnc_dynamicText;
