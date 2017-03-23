@@ -58,8 +58,8 @@
 <Project name="NRE Earplugs">
 	<Package name="NREEarplugs">
 		<Key ID="STR_NREEP_IN_HINT">
-			<Original>You put in your earplugs.</Original>
-			<English>You pug in your earplugs.</English>
+			<Original>Earplugs are in!</Original>
+			<English>Earplugs are in!</English>
 			<Russian>Беруши вставлены!</Russian>
 			<German>Du hast die Ohrstoepsel eingesteckt!</German>
 			<Spanish>¡Te has puesto los tapones!</Spanish>

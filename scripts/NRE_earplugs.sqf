@@ -93,7 +93,7 @@ if ( NreEarplugsActive == 1 ) then {
 	player setVariable ["NreEarplugsAction", _id];
 } else {
 	NreEarplugsActive = 1;
-	1 fadeSound 0.4;
+	3 fadeSound 0.2;
 	hint format	[ localize "STR_NREEP_IN_HINT" ];
 	_id = player getVariable "NreEarplugsAction";
 	player removeAction _id;
