@@ -46,7 +46,7 @@ ghst_boatlist = _vehicleList;
 
 //publicvariable "ghst_boatlist";
 
-hint "boatlist list ready";
+//hint "boatlist list ready";
 /*
 for "_x" from 0 to (count _vehiclelist)-1 do {
 
