@@ -29,16 +29,16 @@ class PARAM_Rain
 class PARAM_Fog
 {
 	title= "    Fog Setting:";
-	values[]= {1,0,10,20,30,40,50,60,70,80,90,100};
-	texts[]= {"Random Fog","0% Fog","10% Fog","20% Fog","30% Fog","40% Fog","50% Fog","60% Fog","70% Fog","80% Fog","90% Fog","100% Fog"};
-	default= 0;
+	values[]= {1,0,10,20,30,40,50};
+	texts[]= {"Random Fog","0% Fog","10% Fog","20% Fog","30% Fog","40% Fog","50% Fog"};
+	default= 1;
 };
 class PARAM_Overcast
 {
 	title= "    Overcast Setting:";
 	values[]= {1,0,10,20,30,40,50,60,70,80,90,100};
 	texts[]= {"Random Overcast","0% Overcast","10% Overcast","20% Overcast","30% Overcast","40% Overcast","50% Overcast","60% Overcast","70% Overcast","80% Overcast","90% Overcast","100% Overcast"};
-	default= 30;
+	default= 1;
 };
 class PARAM_Teamdead
 {
@@ -60,7 +60,7 @@ class headlessClient
 	title="    Headless Client:";
 	texts[]={"Disabled","Enabled"};
 	values[]={0,1};
-	default=0;
+	default=1;
 	function="fnc_ghst_headlessclient";
 	isGlobal=1;
 };
