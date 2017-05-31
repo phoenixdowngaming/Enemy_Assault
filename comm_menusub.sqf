@@ -34,7 +34,7 @@ UavsubMenu =
 
 ["MQ-12 Falcon", [3], "", -5, [["expression", "ghst_ugvsupport = [(getmarkerpos ""ghst_player_support""),""B_T_UAV_03_F"",100,30] spawn ghst_fnc_uavsupport;"]], "1", "1"],
 
-["UCAV Sentienl", [4], "", -5, [["expression", "ghst_uavsupport = [(getmarkerpos ""ghst_player_support""),""B_UAV_05_F"",100,30] spawn ghst_fnc_uavsupport;"]], "1", "1"],
+["UCAV Sentinel", [4], "", -5, [["expression", "ghst_uavsupport = [(getmarkerpos ""ghst_player_support""),""B_UAV_05_F"",100,30] spawn ghst_fnc_uavsupport;"]], "1", "1"],
 
 ["UGV Stomper RCWS", [5], "", -5, [["expression", "ghst_ugvsupport = [(getmarkerpos ""ghst_player_support""),""B_UGV_01_rcws_F"",2,30] spawn ghst_fnc_ugvsupport;"]], "1", "1"],
 
