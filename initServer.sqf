@@ -61,7 +61,7 @@ _PARAM_AISkill = "PARAM_AISkill" call BIS_fnc_getParamValue;
 //Spawn Base helicopters
 if (true) then {
 private ["_helolist","_markarray","_namearray","_air","_marksel","_VarName"];
-if ghst_rhsmod then {_helolist = ["rhsusf_CH53E_USMC","RHS_UH60M"];} else {_helolist = ["B_Heli_Transport_01_camo_F","B_Heli_Transport_01_camo_F"];};
+if ghst_rhsmod then {_helolist = ["rhsusf_CH53E_USMC","RHS_UH60M"];} else {_helolist = ["O_Heli_Light_02_F","O_Heli_Light_02_F"];};
 _markarray = ["heli_1spawn","heli_2spawn"];
 _namearray = ["heli_1","heli_2"];
 	{
@@ -78,6 +78,10 @@ _namearray = ["heli_1","heli_2"];
 	nul = [_air,5,false] execfsm "scripts\ghst_vehrespawn.fsm";
 	} foreach _helolist;
 };
+
+//Obie heli
+heli_1 setObjectTextureGlobal [0, "\a3\air_f\heli_light_02\data\Heli_Light_02_ext_CO.paa"];
+heli_2 setObjectTextureGlobal [0, "\a3\air_f\heli_light_02\data\Heli_Light_02_ext_CO.paa"];
 
 //Spawn F16C ReArm
 _PARAM_FA16C = "PARAM_FA16C" call BIS_fnc_getParamValue;
@@ -99,6 +103,6 @@ _namearray = ["f16rearm_1","f16rearm_2"];
 //#include "servermodules.sqf"
 
 ["Initialize", [true]] call BIS_fnc_dynamicGroups;
-["RegisterGroup", [group (playableunits select 0),leader group (playableunits select 0),["insignia_GL", "Skull Squad", false]]] call BIS_fnc_dynamicGroups;
+["RegisterGroup", [group (playableunits select 0),leader group (playableunits select 0),["insignia_GL", "Phoenix Squad", false]]] call BIS_fnc_dynamicGroups;
 
 //call ghst_fnc_randomobj;	
