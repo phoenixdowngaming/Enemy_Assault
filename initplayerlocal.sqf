@@ -42,14 +42,14 @@ if ghst_rhsmod then {
 #include "addnotes.sqf"
 
 if (player iskindof "B_recon_JTAC_F") then {
-[player,"Attackhelo"] call BIS_fnc_addCommMenuItem;
+//[player,"Attackhelo"] call BIS_fnc_addCommMenuItem;
 player setVariable ["ghst_helosup", 0];
 player setVariable ["ghst_helosup2", 0];
 
 [player,"Casplane"] call BIS_fnc_addCommMenuItem;
 player setVariable ["ghst_cassup", 0];
 
-[player,"RemoteDesignator"] call BIS_fnc_addCommMenuItem;
+//[player,"RemoteDesignator"] call BIS_fnc_addCommMenuItem;
 player setVariable ["ghst_remotedes", 0];
 };
 
@@ -66,7 +66,7 @@ player setVariable ["ghst_ugvsup", [0,0]];
 //[player,"PUAV"] call BIS_fnc_addCommMenuItem;
 player setVariable ["ghst_puavsup", 0];
 
-[player,"RemoteDesignator"] call BIS_fnc_addCommMenuItem;
+//[player,"RemoteDesignator"] call BIS_fnc_addCommMenuItem;
 player setVariable ["ghst_remotedes", 0];
 //[player,"Artillery"] call BIS_fnc_addCommMenuItem;
 };
@@ -75,14 +75,14 @@ if (player iskindof "B_Soldier_SL_F") then {
 [player,"AMMO"] call BIS_fnc_addCommMenuItem;
 player setVariable ["ghst_ammodrop", 0];
 
-[player,"PUAV"] call BIS_fnc_addCommMenuItem;
+//[player,"PUAV"] call BIS_fnc_addCommMenuItem;
 player setVariable ["ghst_puavsup", 0];
 
 [player,"RESPAWNTENT"] call BIS_fnc_addCommMenuItem;
 player setVariable ["ghst_respawntent", 0];
 };
 
-[player,"CARGO"] call BIS_fnc_addCommMenuItem;
+//[player,"CARGO"] call BIS_fnc_addCommMenuItem;
 player setVariable ["ghst_cargodrop", 0];
 //[player,"Transport"] call BIS_fnc_addCommMenuItem;
 
